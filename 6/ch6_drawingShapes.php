@@ -9,7 +9,7 @@
         </style>
         <!-- Include Google Maps JS API -->
         <script type="text/javascript"
-          src="https://maps.googleapis.com/maps/api/js? libraries=drawing&sensor=false">
+          src="https://maps.googleapis.com/maps/api/js?key=<?php echo json_decode(file_get_contents("../.etc/key.json"))->key; ?>&libraries=drawing&sensor=false">
         </script>
         
   <!-- Map creation is here -->
